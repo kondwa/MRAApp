@@ -2,6 +2,7 @@ package com.example.mraapp;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -38,14 +39,9 @@ public class TaxpayersAdapter extends RecyclerView.Adapter<TaxpayersAdapter.Taxp
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(context,taxpayerList.get(position).getTradingName()+" clicked!",Toast.LENGTH_SHORT);
-            }
-        });
-        holder.itemView.setOnLongClickListener(new View.OnLongClickListener() {
-            @Override
-            public boolean onLongClick(View v) {
-                Toast.makeText(context,taxpayerList.get(position).getTradingName()+" long clicked!",Toast.LENGTH_LONG);
-                return true;
+                Intent intent = new Intent(context,ShowTaxpayerActivity.class);
+                intent.putExtra("position",position);
+                context.startActivity(intent);
             }
         });
     }

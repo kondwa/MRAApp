@@ -3,10 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/KondwaniHara/AndroidStudioProjects/MRAApp/app/src/main/res/layout/activity_add_taxpayer.xml" value="0.1" />
         <entry key="..\:/Users/KondwaniHara/AndroidStudioProjects/MRAApp/app/src/main/res/layout/activity_delete_taxpayer.xml" value="0.1213768115942029" />
+        <entry key="..\:/Users/KondwaniHara/AndroidStudioProjects/MRAApp/app/src/main/res/layout/activity_edit_taxpayer.xml" value="0.1" />
         <entry key="..\:/Users/KondwaniHara/AndroidStudioProjects/MRAApp/app/src/main/res/layout/activity_main.xml" value="0.12771739130434784" />
+        <entry key="..\:/Users/KondwaniHara/AndroidStudioProjects/MRAApp/app/src/main/res/layout/activity_show_taxpayer.xml" value="0.17119565217391305" />
         <entry key="..\:/Users/KondwaniHara/AndroidStudioProjects/MRAApp/app/src/main/res/layout/activity_taxpayer_list.xml" value="0.12771739130434784" />
         <entry key="..\:/Users/KondwaniHara/AndroidStudioProjects/MRAApp/app/src/main/res/layout/taxpayer_list_item.xml" value="0.1213768115942029" />
+        <entry key="..\:/Users/KondwaniHara/AndroidStudioProjects/MRAApp/app/src/main/res/menu/options_menu.xml" value="0.1" />
       </map>
     </option>
   </component>

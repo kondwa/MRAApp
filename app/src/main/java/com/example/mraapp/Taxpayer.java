@@ -30,6 +30,9 @@ public class Taxpayer {
         this.deleted = deleted;
     }
 
+    public Taxpayer() {
+    }
+
     @SerializedName("id")
     private int id;
     @SerializedName("TPIN")

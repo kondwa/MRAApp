@@ -30,7 +30,6 @@ public class MainActivity extends AppCompatActivity {
         SessionManager.setContext(this);
         buttonLogin.setOnClickListener(v -> {
             doLogin();
-            Toast.makeText(MainActivity.this,editTextEmail.getText().toString()+" logging in...",Toast.LENGTH_LONG).show();
         });
     }
 
@@ -53,9 +52,9 @@ public class MainActivity extends AppCompatActivity {
                 }else{
                     progressDialog.dismiss();
                     if(loginResponse!= null) {
-                        Toast.makeText(MainActivity.this, loginResponse.getRemark(), Toast.LENGTH_LONG).show();
+                        Toast.makeText(MainActivity.this, loginResponse.getRemark(), Toast.LENGTH_SHORT).show();
                     }else{
-                        Toast.makeText(MainActivity.this,"Login failed.",Toast.LENGTH_LONG).show();
+                        Toast.makeText(MainActivity.this,"Login failed.",Toast.LENGTH_SHORT).show();
                     }
                 }
             }
@@ -63,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onFailure(Call<LoginResponse> call, Throwable t) {
                 progressDialog.dismiss();
-                Toast.makeText(MainActivity.this,t.toString(),Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity.this,t.toString(),Toast.LENGTH_SHORT).show();
             }
         });
     }

@@ -6,7 +6,7 @@ import android.content.SharedPreferences;
 public class SessionManager {
     private static Context context;
     private static SharedPreferences prefs;
-    private static String username;
+    private static int position;
 
     public static String getUsername() {
         return prefs.getString(USERNAME,null);
