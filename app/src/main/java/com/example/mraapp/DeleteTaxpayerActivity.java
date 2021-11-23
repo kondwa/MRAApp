@@ -30,7 +30,7 @@ public class DeleteTaxpayerActivity extends AppCompatActivity {
         setContentView(R.layout.activity_delete_taxpayer);
         authorize();
         etTpin = findViewById(R.id.etTpin);
-        btnCancel = findViewById(R.id.btnDelete);
+        btnCancel = findViewById(R.id.btnCancel);
         btnDelete = findViewById(R.id.btnDelete);
         btnDelete.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -38,11 +38,29 @@ public class DeleteTaxpayerActivity extends AppCompatActivity {
                 deleteTaxpayer();
             }
         });
+        btnCancel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
         Intent intent = getIntent();
         position = intent.getIntExtra("position",-1);
         if(position != -1){
             getTaxpayer();
         }
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        authorize();
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        authorize();
     }
 
     private void deleteTaxpayer() {

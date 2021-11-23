@@ -72,6 +72,19 @@ public class ShowTaxpayerActivity extends AppCompatActivity {
             }
         });
     }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        authorize();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        authorize();
+    }
+
     private void authorize() {
         SessionManager.setContext(this);
         authorization = SessionManager.getAuthorization();
